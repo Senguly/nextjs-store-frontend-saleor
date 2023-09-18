@@ -1,0 +1,23 @@
+@import "../../../globalStyles/scss/variables.scss";
+.account {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  @media screen and (max-width: $small-screen) {
+    flex-direction: column;
+  }
+
+  &__menu {
+    width: 28%;
+    @media screen and (max-width: $small-screen) {
+      width: 100%;
+    }
+    margin-right: 30px;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}

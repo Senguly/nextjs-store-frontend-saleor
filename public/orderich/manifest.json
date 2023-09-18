@@ -1,0 +1,16 @@
+{
+  "name": "Orderich",
+  "short_name": "Orderich",
+  "icons": [
+    {
+      "src": "/favicon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "background_color": "#ddd",
+  "description": "Orderich",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#FFD668"
+}

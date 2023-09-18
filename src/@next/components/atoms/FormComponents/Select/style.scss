@@ -1,0 +1,15 @@
+.customize-select > div {
+  border-radius: 8px;
+  border-color: #dcdcdc;
+  padding: 1px 0px;
+}
+
+.customize-select > div > div:first-child {
+  padding: 0px 16px;
+}
+
+.customize-select {
+  span {
+    display: none;
+  }
+}

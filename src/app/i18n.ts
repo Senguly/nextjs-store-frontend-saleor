@@ -1,0 +1,195 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+const resources = {
+  en: {
+    translation: {
+      "delivery ": "Delivery",
+      "discount ": "Discount",
+      "delivery-cost": "Delivery cost",
+      "your-order": "Your order",
+      "checkout ": "Checkout",
+      "transaction-cost": "Transaction cost (iDeal)",
+      "add-to-order": "Add to order",
+      "select-order-type": "Select order type",
+      "continue ": "Continue",
+      "add-more": "Add more",
+      "delivering ": "Delivering",
+      "pickup ": "Pickup",
+      "at our location": "at our location",
+      "total ": "Total",
+      "place-order": "Place order",
+      "view-order": "View order",
+      "Paid with iDeal": "Paid with iDeal",
+      "How do you wish to receive your order?":
+        "How do you wish to receive your order?",
+      "Who is going to receive the order?":
+        "Who is going to receive the order?",
+      "Anything else we should know?": "Anything else we should know?",
+      "How do you wish to pay?": "How do you wish to pay?",
+      day: "Day",
+      date: "Date",
+      time: "Time",
+      firstName: "First name",
+      lastName: "Last name",
+      streetAddress: "Street address",
+      apartment: "Apartment, unit, building, floor (optional)",
+      postalCode: "Postcode",
+      city: "City",
+      email: "Email",
+      phoneNumber: "Phone number",
+      companyName: "Company name",
+      "order-note": "Order note, special instructions (optional)",
+      "select-bank": "Select bank",
+      "select-your-bank": "Select your bank",
+      "to ": "to",
+      "Fill in your postcode to see if we deliver to your area.":
+        "Fill in your postcode to see if we deliver to your area.",
+      "Place your order and pick it up at our location":
+        "Place your order and pick it up at our location",
+      "Sorry, we do not deliver to this area. Try another postcode or place a pickup delivery instead.":
+        "Sorry, we do not deliver to this area. Try another postcode or place a pickup delivery instead.",
+      "Delivery & pickup schedule": "Delivery & pickup schedule",
+      "close ": "Close",
+      "Monday ": "Monday",
+      "Tuesday ": "Tuesday",
+      "Wednesday ": "Wednesday",
+      "Thursday ": "Thursday",
+      "Friday ": "Friday",
+      "Saturday ": "Saturday",
+      "Sunday ": "Sunday",
+      "Today ": "Today",
+      "Delivery minimum": "Delivery minimum",
+      "Delivery cost": "Delivery cost",
+      "Free delivery from": "Free delivery from",
+      "Sign up using your email to continue. Already have an account?":
+        "Sign up using your email to continue. Already have an account?",
+      "Email address": "Email address",
+      "Password ": "Password",
+      "Repeat Password": "Repeat Password",
+      "Invalid email!": "Invalid email!",
+      "Passwords must match": "Passwords must match",
+      "Sign up": "Sign up",
+      "Signup ": "Signup",
+      "Login ": "Login",
+      "Log in ": "Log in",
+      "Log in using your email to continue. No account yet?":
+        "Log in using your email to continue. No account yet?",
+      "Forgot password?": "Forgot password?",
+      "Our apologies.": "Our apologies.",
+      "Order for delivery/pickup": "Order for delivery/pickup",
+      "We are not taking orders from this QR code at the moment. Please contact us if this is a mistake, or place a delivery or pickup order instead.":
+        "We are not taking orders from this QR code at the moment. Please contact us if this is a mistake, or place a delivery or pickup order instead.",
+      "We are closed for": "We are closed for",
+      "at the moment. Please check our opening hours and visit us another time.":
+        "at the moment. Please check our opening hours and visit us another time.",
+      "Paid with iDEAL": "Paid with iDEAL",
+      "Free ": "Free",
+      "more ": "More",
+      "Enter your email address below to receive a password reset link.":
+        "Enter your email address below to receive a password reset link.",
+      "Reset password": "Reset password",
+    },
+  },
+  hl: {
+    translation: {
+      "delivery ": "Levering",
+      "discount ": "Korting",
+      "delivery-cost": "Bezorgkosten",
+      "your-order": "Jouw bestelling",
+      "checkout ": "Uitchecken",
+      "transaction-cost": "Transactiekosten (iDeal)",
+      "add-to-order": "Aan bestelling toevoegen",
+      "select-order-type": "Selecteer besteltype",
+      "continue ": "Doorgaan met",
+      "add-more": "Voeg meer toe",
+      "delivering ": "Bezorgen",
+      "pickup ": "Afhalen",
+      "at our location": "op onze locatie",
+      "total ": "Totaal",
+      "place-order": "Plaats bestelling",
+      "view-order": "Bestelling bekijken",
+      "Paid with iDeal": "Betaald met iDeal",
+      "How do you wish to receive your order?":
+        "Hoe wilt u uw bestelling ontvangen?",
+      "Who is going to receive the order?":
+        "Wie gaat de bestelling in ontvangst nemen?",
+      "Anything else we should know?": "Moeten we nog iets weten?",
+      "How do you wish to pay?": "Moeten we nog iets weten?",
+      day: "Dag",
+      date: "Datum",
+      time: "Tijd",
+      firstName: "Voornaam",
+      lastName: "Achternaam",
+      streetAddress: "Adres",
+      apartment: "Appartement, unit, gebouw, verdieping (optioneel)",
+      postalCode: "Postcode",
+      city: "Stad",
+      email: "E-mail",
+      phoneNumber: "Telefoonnummer",
+      companyName: "Bedrijfsnaam",
+      "order-note": "Bestelnota, speciale instructies (optioneel)",
+      "select-bank": "Selecteer bank",
+      "select-your-bank": "Selecteer je bank",
+      "to ": "naar",
+      "Fill in your postcode to see if we deliver to your area.":
+        "Vul je postcode in om te zien of we bij jou in de buurt bezorgen.",
+      "Place your order and pick it up at our location":
+        "Plaats je bestelling en haal deze op bij ons op locatie:",
+      "Sorry, we do not deliver to this area. Try another postcode or place a pickup delivery instead.":
+        "Sorry, we bezorgen niet in dit gebied. Probeer een andere postcode of plaats een afhaalbezorging.",
+      "Delivery & pickup schedule": "Bezorg- en ophaalschema",
+      "close ": "Dichtbij",
+      "Monday ": "Maandag",
+      "Tuesday ": "Dinsdag",
+      "Wednesday ": "Woensdag",
+      "Thursday ": "Donderdag",
+      "Friday ": "Vrijdag",
+      "Saturday ": "Zaterdag",
+      "Sunday ": "Zondag",
+      "Today ": "Vandaag",
+      "Delivery minimum": "Minimale levering",
+      "Delivery cost": "Bezorgkosten",
+      "Free delivery from": "Gratis bezorging vanaf",
+      "Sign up using your email to continue. Already have an account?":
+        "Meld u aan met uw e-mailadres om door te gaan. Heb je al een account?",
+      "Email address": "E-mailadres",
+      "Password ": "Wachtwoord",
+      "Repeat Password": "Herhaal wachtwoord",
+      "Invalid email!": "Ongeldig e-mail!",
+      "Passwords must match": "Wachtwoorden moeten overeenkomen",
+      "Sign up": "Inschrijven",
+      "Signup ": "Inschrijven",
+      "Login ": "Login",
+      "Log in": "Log in",
+      "Log in using your email to continue. No account yet?":
+        "Log in met je e-mailadres om verder te gaan. Nog geen account?",
+      "Forgot password?": "Wachtwoord vergeten?",
+      "Our apologies.": "Onze excuses.",
+      "Order for delivery/pickup": "Bestellen voor levering/afhalen",
+      "We are not taking orders from this QR code at the moment. Please contact us if this is a mistake, or place a delivery or pickup order instead.":
+        "We nemen momenteel geen bestellingen aan van deze QR-code. Neem contact met ons op als dit een vergissing is, of plaats in plaats daarvan een bezorg- of afhaalopdracht.",
+      "We are closed for": "Wij zijn gesloten voor",
+      "at the moment. Please check our opening hours and visit us another time.":
+        "momenteel. Check onze openingstijden en kom een ​​ander keer langs.",
+      "Paid with iDEAL": "Betaald met iDEAL",
+      "Free ": "Vrij",
+      "more ": "Meer",
+      "Enter your email address below to receive a password reset link.":
+        "Vul hieronder uw e-mailadres in om een ​​wachtwoordherstellink te ontvangen.",
+      "Reset password": "Wachtwoord opnieuw instellen",
+    },
+  },
+};
+
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources,
+    lng: "hl",
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+  });
+
+export default i18n;

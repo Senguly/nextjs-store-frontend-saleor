@@ -1,0 +1,31 @@
+.main-menu {
+  &__icon2 {
+    svg * {
+      transition: 0.3s;
+      width: 16px !important;
+      height: 16px !important;
+    }
+
+    svg {
+      width: 16px !important;
+      height: 16px !important;
+    }
+
+    &:hover {
+      svg * {
+        fill: #ff6347;
+      }
+    }
+
+    svg {
+      vertical-align: bottom;
+    }
+  }
+}
+
+.btn-responsive {
+  @media screen and (max-width: 540px) {
+    margin: 0 !important;
+    // padding: 4px 0 0 0 !important;
+  }
+}
